@@ -11,14 +11,14 @@ import (
 type SHAUtils struct {
 }
 
-func (self SHAUtils) Hash(data string, shaType string) (string) {
+func (self SHAUtils) Hash(data *string, shaType *string) (string) {
 	var h = sha256.New()
-	if (strings.ToUpper(shaType) == "SHA1") {
+	if (strings.ToUpper(*shaType) == "SHA1") {
 		h = sha1.New()
-	} else if (strings.ToUpper(shaType) == "SHA512") {
+	} else if (strings.ToUpper(*shaType) == "SHA512") {
 		h = sha512.New()
 	}
-	h.Write([]byte(data))
+	h.Write([]byte(*data))
 	sha := base64.URLEncoding.EncodeToString(h.Sum(nil))
 	return sha;
 }

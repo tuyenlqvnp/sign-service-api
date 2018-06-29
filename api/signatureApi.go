@@ -2,6 +2,7 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
+	"log"
 )
 
 type SignatureApi struct {
@@ -18,5 +19,12 @@ func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 }
 
 func (self SignatureApi) SignWithCertificate(context *gin.Context) {
-	signatureService.EncryptDataWithCertificate("xml data in here");
+	xmlDataString := context.PostForm("xmlData")
+	signature, err := signatureService.EncryptDataWithCertificate(&xmlDataString);
+	if (err == nil) {
+		result, err := signatureService.InsertSignatureToXmlData(&xmlDataString, &signature)
+		if (err == nil) {
+			log.Println(result);
+		}
+	}
 }

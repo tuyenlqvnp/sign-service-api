@@ -6,3 +6,4 @@ import (
 
 var pkcsUtils = utils.PKCSUtils{}
 var shaUtils = utils.SHAUtils{};
+var xmlUtils = utils.XmlUtils{};
