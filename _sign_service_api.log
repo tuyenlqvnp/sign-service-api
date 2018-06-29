@@ -659,3 +659,625 @@
   </Signature>
 </doc>
 2018/06/29 16:26:59 main.go:99: RouterMiddleware: End request
+2018/06/29 16:31:00 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:31:00 signatureService.go:22: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:31:00 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+  </Signature>
+</doc>
+2018/06/29 16:31:00 main.go:99: RouterMiddleware: End request
+2018/06/29 16:31:05 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:31:05 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:31:05 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:31:05 main.go:86: :%!d(string=8080)
+2018/06/29 16:31:05 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:31:06 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:31:06 signatureService.go:22: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:31:49 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+  </Signature>
+</doc>
+2018/06/29 16:31:49 main.go:99: RouterMiddleware: End request
+2018/06/29 16:32:36 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:32:36 signatureService.go:22: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:39:55 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:39:55 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:39:55 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:39:55 main.go:86: :%!d(string=8080)
+2018/06/29 16:39:55 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:39:56 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:39:56 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:39:56 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo/>
+  </Signature>
+</doc>
+2018/06/29 16:39:56 main.go:99: RouterMiddleware: End request
+2018/06/29 16:43:16 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:43:16 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:43:16 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo/>
+  </Signature>
+</doc>
+2018/06/29 16:43:16 main.go:99: RouterMiddleware: End request
+2018/06/29 16:45:43 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:45:43 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:45:43 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:45:43 main.go:86: :%!d(string=8080)
+2018/06/29 16:45:43 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:45:47 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:45:47 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:45:47 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    </SignedInfo>
+  </Signature>
+</doc>
+2018/06/29 16:45:47 main.go:99: RouterMiddleware: End request
+2018/06/29 16:45:49 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:45:49 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:45:49 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    </SignedInfo>
+  </Signature>
+</doc>
+2018/06/29 16:45:49 main.go:99: RouterMiddleware: End request
+2018/06/29 16:48:22 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:48:22 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:48:22 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:48:22 main.go:86: :%!d(string=8080)
+2018/06/29 16:48:22 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:48:23 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:48:24 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:48:24 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <Reference URI="SigningData">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </Transforms>
+      </Reference>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    </SignedInfo>
+  </Signature>
+</doc>
+2018/06/29 16:48:24 main.go:99: RouterMiddleware: End request
+2018/06/29 16:50:09 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:50:09 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:50:09 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:50:09 main.go:86: :%!d(string=8080)
+2018/06/29 16:50:09 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:50:13 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:50:13 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:50:13 signatureApi.go:27: <doc>
+  <Invoice>
+    <Content Id="SigningData">
+      <Amount>18490000</Amount>
+      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+      <ComBankName/>
+      <ComBankNo/>
+      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+      <ComPhone>02866811465</ComPhone>
+      <ComTaxCode>0312289651</ComTaxCode>
+      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+      <CusBankName/>
+      <CusBankNo/>
+      <CusCode>5645</CusCode>
+      <CusName/>
+      <CusPhone/>
+      <CusTaxCode>0307672788</CusTaxCode>
+      <Extra/>
+      <GrossValue>0</GrossValue>
+      <GrossValue0>0</GrossValue0>
+      <GrossValue10>0</GrossValue10>
+      <GrossValue5>0</GrossValue5>
+      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+      <InvoiceNo>1</InvoiceNo>
+      <InvoicePattern>01GTKT0/001</InvoicePattern>
+      <KindOfService/>
+      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+      <Products>
+        <Product>
+          <Amount>16809091</Amount>
+          <Code/>
+          <Discount>0</Discount>
+          <DiscountAmount>0</DiscountAmount>
+          <Extra1/>
+          <Extra2/>
+          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+          <ProdPrice>16809091</ProdPrice>
+          <ProdQuantity>1</ProdQuantity>
+          <ProdUnit>B?</ProdUnit>
+          <Remark/>
+          <Total>0</Total>
+          <VATAmount>0</VATAmount>
+          <VATRate>0</VATRate>
+        </Product>
+      </Products>
+      <SerialNo>MN/17E</SerialNo>
+      <SignDate>14/11/2017</SignDate>
+      <Total>16809091</Total>
+      <VAT_Amount>1680909</VAT_Amount>
+      <VAT_Rate>10</VAT_Rate>
+      <VatAmount0>0</VatAmount0>
+      <VatAmount10>0</VatAmount10>
+      <VatAmount5>0</VatAmount5>
+    </Content>
+  </Invoice>
+  <Signature>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>adafasfsfasf</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+      <DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+      <Reference URI="SigningData">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </Transforms>
+      </Reference>
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+    </SignedInfo>
+  </Signature>
+</doc>
+2018/06/29 16:50:13 main.go:99: RouterMiddleware: End request
