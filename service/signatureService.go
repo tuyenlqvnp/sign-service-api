@@ -2,15 +2,15 @@ package service
 
 import (
 	"crypto/rsa"
-	"log"
 	"strings"
-	"crypto/x509"
+	"github.com/tuyenlqvnp/sign-service-api/bean"
 )
 
 type SignatureService struct {
 }
 
-func (self SignatureService) EncryptDataWithCertificate(data *string) (string, *x509.Certificate, error) {
+func (self SignatureService) EncryptDataWithCertificate(data *string) (*bean.CipherData, error) {
+	cipherData := bean.CipherData{}
 	private, certificate, err := pkcsUtils.ExtractDataFromFile("/Users/thaibao/Desktop/my256.p12", "654321");
 	if (err == nil) {
 		// check certificate
@@ -20,20 +20,25 @@ func (self SignatureService) EncryptDataWithCertificate(data *string) (string, *
 			hashData := shaUtils.Hash(data, &shaType)
 			cipherText, err := pkcsUtils.EncryptData(private.(*rsa.PrivateKey), []byte(hashData));
 			if (err == nil) {
-				log.Println("Ciphertext: " + *cipherText);
-				return *cipherText, certificate, nil
+				//log.Println("Ciphertext: " + *cipherText);
+				cipherData.PrivateKey = private
+				cipherData.Certificate = certificate
+				cipherData.CipherText = cipherText
+				cipherData.HashData = &hashData
+				return &cipherData, nil
 			}
 		}
 	}
-	return "", nil, err;
+	return nil, err;
 }
 
-func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, signatureStr *string, certificate *x509.Certificate) (string, error) {
+func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cipherData *bean.CipherData) (string, error) {
 	xmlData := make(map[string]interface{});
 	xmlData, err := xmlUtils.ParseFromStringToInterface(xmlDataString);
 	if (err == nil) {
+		invoice := xmlData["Invoice"].(map[string]interface{})
 		signature := make(map[string]interface{})
-		signature["SignatureValue"] = *signatureStr
+		signature["SignatureValue"] = *cipherData.CipherText
 
 		x509Data := make(map[string]interface{})
 		x509Data["X509Certificate"] = "adafasfsfasf"
@@ -60,12 +65,13 @@ func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, sig
 		DigestMethod := make(map[string]interface{})
 		DigestMethod["-Algorithm"] = "http://www.w3.org/2000/09/xmldsig#sha256"
 		signedInfo["DigestMethod"] = DigestMethod
-		signedInfo["DigestValue"] = "dCuHcDtDhzByOLEhCqgwTkhELBE"
+		signedInfo["DigestValue"] = *cipherData.HashData
 
-		xmlData["Signature"] = signature
-		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(xmlData)
+		invoice["Signature"] = signature
+		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "	", "Invoice", "")
+		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
 		if (err == nil) {
-			return xmlDataStringResult, err
+			return temp + "\n" + xmlDataStringResult, err
 		}
 	}
 	return "", err

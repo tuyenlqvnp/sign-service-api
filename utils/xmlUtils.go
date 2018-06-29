@@ -13,8 +13,8 @@ func (self XmlUtils) ParseFromStringToInterface(xmlData *string) (map[string]int
 	return data, err
 }
 
-func (self XmlUtils) ParseFromInterfaceToString(data interface{}) (string, error) {
-	dataStr, err := mxj.AnyXmlIndent(data, "", "  ")
+func (self XmlUtils) ParseFromInterfaceToString(data interface{}, prefix string, intent string, tags ...string) (string, error) {
+	dataStr, err := mxj.AnyXmlIndent(data, prefix, intent, tags[0], tags[1])
 	if (err == nil) {
 		return string(dataStr), err
 	}

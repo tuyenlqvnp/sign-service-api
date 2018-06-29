@@ -1281,3 +1281,885 @@
   </Signature>
 </doc>
 2018/06/29 16:50:13 main.go:99: RouterMiddleware: End request
+2018/06/29 16:52:35 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:52:35 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:52:35 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:52:35 main.go:86: :%!d(string=8080)
+2018/06/29 16:52:35 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:52:36 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:52:37 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:52:37 signatureApi.go:27: aaaa<doc>
+aaaa  <Invoice>
+aaaa    <Content Id="SigningData">
+aaaa      <Amount>18490000</Amount>
+aaaa      <Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+aaaa      <ArisingDate>14/11/2017 00:00:00</ArisingDate>
+aaaa      <Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+aaaa      <ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+aaaa      <ComBankName/>
+aaaa      <ComBankNo/>
+aaaa      <ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+aaaa      <ComPhone>02866811465</ComPhone>
+aaaa      <ComTaxCode>0312289651</ComTaxCode>
+aaaa      <CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+aaaa      <CusBankName/>
+aaaa      <CusBankNo/>
+aaaa      <CusCode>5645</CusCode>
+aaaa      <CusName/>
+aaaa      <CusPhone/>
+aaaa      <CusTaxCode>0307672788</CusTaxCode>
+aaaa      <Extra/>
+aaaa      <GrossValue>0</GrossValue>
+aaaa      <GrossValue0>0</GrossValue0>
+aaaa      <GrossValue10>0</GrossValue10>
+aaaa      <GrossValue5>0</GrossValue5>
+aaaa      <InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+aaaa      <InvoiceNo>1</InvoiceNo>
+aaaa      <InvoicePattern>01GTKT0/001</InvoicePattern>
+aaaa      <KindOfService/>
+aaaa      <Kind_of_Payment>TM/CK</Kind_of_Payment>
+aaaa      <Products>
+aaaa        <Product>
+aaaa          <Amount>16809091</Amount>
+aaaa          <Code/>
+aaaa          <Discount>0</Discount>
+aaaa          <DiscountAmount>0</DiscountAmount>
+aaaa          <Extra1/>
+aaaa          <Extra2/>
+aaaa          <ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+aaaa          <ProdPrice>16809091</ProdPrice>
+aaaa          <ProdQuantity>1</ProdQuantity>
+aaaa          <ProdUnit>B?</ProdUnit>
+aaaa          <Remark/>
+aaaa          <Total>0</Total>
+aaaa          <VATAmount>0</VATAmount>
+aaaa          <VATRate>0</VATRate>
+aaaa        </Product>
+aaaa      </Products>
+aaaa      <SerialNo>MN/17E</SerialNo>
+aaaa      <SignDate>14/11/2017</SignDate>
+aaaa      <Total>16809091</Total>
+aaaa      <VAT_Amount>1680909</VAT_Amount>
+aaaa      <VAT_Rate>10</VAT_Rate>
+aaaa      <VatAmount0>0</VatAmount0>
+aaaa      <VatAmount10>0</VatAmount10>
+aaaa      <VatAmount5>0</VatAmount5>
+aaaa    </Content>
+aaaa  </Invoice>
+aaaa  <Signature>
+aaaa    <KeyInfo>
+aaaa      <X509Data>
+aaaa        <X509Certificate>adafasfsfasf</X509Certificate>
+aaaa      </X509Data>
+aaaa    </KeyInfo>
+aaaa    <SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+aaaa    <SignedInfo>
+aaaa      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+aaaa      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+aaaa      <DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+aaaa      <Reference URI="SigningData">
+aaaa        <Transforms>
+aaaa          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+aaaa        </Transforms>
+aaaa      </Reference>
+aaaa      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+aaaa    </SignedInfo>
+aaaa  </Signature>
+aaaa</doc>
+2018/06/29 16:52:37 main.go:99: RouterMiddleware: End request
+2018/06/29 16:52:55 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:52:55 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:52:55 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:52:55 main.go:86: :%!d(string=8080)
+2018/06/29 16:52:55 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:52:56 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:52:56 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:52:56 signatureApi.go:27: <doc>
+	<Invoice>
+		<Content Id="SigningData">
+			<Amount>18490000</Amount>
+			<Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+			<ArisingDate>14/11/2017 00:00:00</ArisingDate>
+			<Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+			<ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+			<ComBankName/>
+			<ComBankNo/>
+			<ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+			<ComPhone>02866811465</ComPhone>
+			<ComTaxCode>0312289651</ComTaxCode>
+			<CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+			<CusBankName/>
+			<CusBankNo/>
+			<CusCode>5645</CusCode>
+			<CusName/>
+			<CusPhone/>
+			<CusTaxCode>0307672788</CusTaxCode>
+			<Extra/>
+			<GrossValue>0</GrossValue>
+			<GrossValue0>0</GrossValue0>
+			<GrossValue10>0</GrossValue10>
+			<GrossValue5>0</GrossValue5>
+			<InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+			<InvoiceNo>1</InvoiceNo>
+			<InvoicePattern>01GTKT0/001</InvoicePattern>
+			<KindOfService/>
+			<Kind_of_Payment>TM/CK</Kind_of_Payment>
+			<Products>
+				<Product>
+					<Amount>16809091</Amount>
+					<Code/>
+					<Discount>0</Discount>
+					<DiscountAmount>0</DiscountAmount>
+					<Extra1/>
+					<Extra2/>
+					<ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+					<ProdPrice>16809091</ProdPrice>
+					<ProdQuantity>1</ProdQuantity>
+					<ProdUnit>B?</ProdUnit>
+					<Remark/>
+					<Total>0</Total>
+					<VATAmount>0</VATAmount>
+					<VATRate>0</VATRate>
+				</Product>
+			</Products>
+			<SerialNo>MN/17E</SerialNo>
+			<SignDate>14/11/2017</SignDate>
+			<Total>16809091</Total>
+			<VAT_Amount>1680909</VAT_Amount>
+			<VAT_Rate>10</VAT_Rate>
+			<VatAmount0>0</VatAmount0>
+			<VatAmount10>0</VatAmount10>
+			<VatAmount5>0</VatAmount5>
+		</Content>
+	</Invoice>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</doc>
+2018/06/29 16:52:56 main.go:99: RouterMiddleware: End request
+2018/06/29 16:53:58 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:53:58 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:53:58 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:53:58 main.go:86: :%!d(string=8080)
+2018/06/29 16:53:58 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:54:01 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:54:01 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:54:01 signatureApi.go:27: <>
+	<Invoice>
+		<Content Id="SigningData">
+			<Amount>18490000</Amount>
+			<Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+			<ArisingDate>14/11/2017 00:00:00</ArisingDate>
+			<Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+			<ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+			<ComBankName/>
+			<ComBankNo/>
+			<ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+			<ComPhone>02866811465</ComPhone>
+			<ComTaxCode>0312289651</ComTaxCode>
+			<CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+			<CusBankName/>
+			<CusBankNo/>
+			<CusCode>5645</CusCode>
+			<CusName/>
+			<CusPhone/>
+			<CusTaxCode>0307672788</CusTaxCode>
+			<Extra/>
+			<GrossValue>0</GrossValue>
+			<GrossValue0>0</GrossValue0>
+			<GrossValue10>0</GrossValue10>
+			<GrossValue5>0</GrossValue5>
+			<InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+			<InvoiceNo>1</InvoiceNo>
+			<InvoicePattern>01GTKT0/001</InvoicePattern>
+			<KindOfService/>
+			<Kind_of_Payment>TM/CK</Kind_of_Payment>
+			<Products>
+				<Product>
+					<Amount>16809091</Amount>
+					<Code/>
+					<Discount>0</Discount>
+					<DiscountAmount>0</DiscountAmount>
+					<Extra1/>
+					<Extra2/>
+					<ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+					<ProdPrice>16809091</ProdPrice>
+					<ProdQuantity>1</ProdQuantity>
+					<ProdUnit>B?</ProdUnit>
+					<Remark/>
+					<Total>0</Total>
+					<VATAmount>0</VATAmount>
+					<VATRate>0</VATRate>
+				</Product>
+			</Products>
+			<SerialNo>MN/17E</SerialNo>
+			<SignDate>14/11/2017</SignDate>
+			<Total>16809091</Total>
+			<VAT_Amount>1680909</VAT_Amount>
+			<VAT_Rate>10</VAT_Rate>
+			<VatAmount0>0</VatAmount0>
+			<VatAmount10>0</VatAmount10>
+			<VatAmount5>0</VatAmount5>
+		</Content>
+	</Invoice>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</>
+2018/06/29 16:54:01 main.go:99: RouterMiddleware: End request
+2018/06/29 16:55:20 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 16:55:20 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 16:55:20 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 16:55:20 main.go:86: :%!d(string=8080)
+2018/06/29 16:55:20 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 16:55:21 main.go:93: RouterMiddleware: Before request
+2018/06/29 16:55:21 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 16:55:21 signatureApi.go:27: <?xml-stylesheet type='text/xsl' href='https://minhnguyetadmin.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/MINHNGUYETVAT' ?>
+	<Invoice>
+		<Content Id="SigningData">
+			<Amount>18490000</Amount>
+			<Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+			<ArisingDate>14/11/2017 00:00:00</ArisingDate>
+			<Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+			<ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+			<ComBankName/>
+			<ComBankNo/>
+			<ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+			<ComPhone>02866811465</ComPhone>
+			<ComTaxCode>0312289651</ComTaxCode>
+			<CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+			<CusBankName/>
+			<CusBankNo/>
+			<CusCode>5645</CusCode>
+			<CusName/>
+			<CusPhone/>
+			<CusTaxCode>0307672788</CusTaxCode>
+			<Extra/>
+			<GrossValue>0</GrossValue>
+			<GrossValue0>0</GrossValue0>
+			<GrossValue10>0</GrossValue10>
+			<GrossValue5>0</GrossValue5>
+			<InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+			<InvoiceNo>1</InvoiceNo>
+			<InvoicePattern>01GTKT0/001</InvoicePattern>
+			<KindOfService/>
+			<Kind_of_Payment>TM/CK</Kind_of_Payment>
+			<Products>
+				<Product>
+					<Amount>16809091</Amount>
+					<Code/>
+					<Discount>0</Discount>
+					<DiscountAmount>0</DiscountAmount>
+					<Extra1/>
+					<Extra2/>
+					<ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+					<ProdPrice>16809091</ProdPrice>
+					<ProdQuantity>1</ProdQuantity>
+					<ProdUnit>B?</ProdUnit>
+					<Remark/>
+					<Total>0</Total>
+					<VATAmount>0</VATAmount>
+					<VATRate>0</VATRate>
+				</Product>
+			</Products>
+			<SerialNo>MN/17E</SerialNo>
+			<SignDate>14/11/2017</SignDate>
+			<Total>16809091</Total>
+			<VAT_Amount>1680909</VAT_Amount>
+			<VAT_Rate>10</VAT_Rate>
+			<VatAmount0>0</VatAmount0>
+			<VatAmount10>0</VatAmount10>
+			<VatAmount5>0</VatAmount5>
+		</Content>
+	</Invoice>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</?xml-stylesheet type='text/xsl' href='https://minhnguyetadmin.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/MINHNGUYETVAT' ?>
+2018/06/29 16:55:21 main.go:99: RouterMiddleware: End request
+2018/06/29 17:01:02 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:01:02 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:01:02 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:01:02 main.go:86: :%!d(string=8080)
+2018/06/29 17:01:02 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:01:04 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:01:04 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 17:01:04 debug.go:45: [GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 500
+2018/06/29 17:01:04 main.go:99: RouterMiddleware: End request
+2018/06/29 17:01:41 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:01:41 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:01:41 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:01:41 main.go:86: :%!d(string=8080)
+2018/06/29 17:01:41 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:01:43 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:01:43 signatureService.go:23: Ciphertext: aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==
+2018/06/29 17:02:05 signatureApi.go:27: <Invoice>
+	<Content Id="SigningData">
+		<Amount>18490000</Amount>
+		<Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words>
+		<ArisingDate>14/11/2017 00:00:00</ArisingDate>
+		<Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer>
+		<ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName>
+		<ComPhone>02866811465</ComPhone>
+		<ComTaxCode>0312289651</ComTaxCode>
+		<CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress>
+		<CusBankName/>
+		<CusBankNo/>
+		<CusCode>5645</CusCode>
+		<CusName/>
+		<CusPhone/>
+		<CusTaxCode>0307672788</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>0</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>HÛa don gi· tr? gia tang</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM/CK</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>16809091</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName>
+				<ProdPrice>16809091</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>B?</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>MN/17E</SerialNo>
+		<SignDate>14/11/2017</SignDate>
+		<Total>16809091</Total>
+		<VAT_Amount>1680909</VAT_Amount>
+		<VAT_Rate>10</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>aUMMqLwH5H8dMniohridiisiaOJ3fDHzZr8pciUFmIZlyK_zEzS2WYbJTghLR_d3XyxVdKdF7UGRa14XoRpdD3rgP0eMW3szBEUjkfKVuzhZaa16bF9Tx2UfDOxMj5wh59B4lcqZM9_KktAe0TcpAnjR4qLGKC-7u1BrBH_z6HPCyU3h3VdCiQY2ZldFMk_eWTJEamDPr9TXskUTYU4XrIYaUgrw1ANXDcwu4X3HtROhRYFcPxuH8dPTKhPnxcUaEkpKYzgJzu6QKGlZxivF9zs_eqIILcdHIH4qp6zIr4IRK0fWJecio7lMxCPgjclT37teAtO8zPpkeDYlrpGkbg==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:02:05 main.go:99: RouterMiddleware: End request
+2018/06/29 17:03:58 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:03:58 signatureService.go:23: Ciphertext: qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==
+2018/06/29 17:04:01 signatureApi.go:27: <Invoice>
+	<Content Id="SigningData">
+		<Amount>1</Amount>
+		<Amount_words>Một đồng</Amount_words>
+		<ArisingDate>28/06/2018 08:25:09</ArisingDate>
+		<Buyer/>
+		<ComAddress>1295B Nguyễn Thị Định , Phường Cát Lái , Quận 2 , TP Hồ Chí Minh</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG HẢI TÂN CẢNG</ComName>
+		<ComPhone>01669715845</ComPhone>
+		<ComTaxCode>0311297674</ComTaxCode>
+		<CusAddress>dia chi a</CusAddress>
+		<CusBankName/>
+		<CusBankNo>so tai khoan a</CusBankNo>
+		<CusCode>ma so a</CusCode>
+		<CusName>cong ty a</CusName>
+		<CusPhone>dien thoai a</CusPhone>
+		<CusTaxCode>0314214267</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>1</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>1</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>mat hang a</ProdName>
+				<ProdPrice>1</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>kg</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>AA/18E</SerialNo>
+		<SignDate>28/06/2018</SignDate>
+		<Total>1</Total>
+		<VAT_Amount>0</VAT_Amount>
+		<VAT_Rate>0</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:04:01 main.go:99: RouterMiddleware: End request
+2018/06/29 17:04:04 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:04:04 signatureService.go:23: Ciphertext: qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==
+2018/06/29 17:04:04 signatureApi.go:27: <Invoice>
+	<Content Id="SigningData">
+		<Amount>1</Amount>
+		<Amount_words>Một đồng</Amount_words>
+		<ArisingDate>28/06/2018 08:25:09</ArisingDate>
+		<Buyer/>
+		<ComAddress>1295B Nguyễn Thị Định , Phường Cát Lái , Quận 2 , TP Hồ Chí Minh</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG HẢI TÂN CẢNG</ComName>
+		<ComPhone>01669715845</ComPhone>
+		<ComTaxCode>0311297674</ComTaxCode>
+		<CusAddress>dia chi a</CusAddress>
+		<CusBankName/>
+		<CusBankNo>so tai khoan a</CusBankNo>
+		<CusCode>ma so a</CusCode>
+		<CusName>cong ty a</CusName>
+		<CusPhone>dien thoai a</CusPhone>
+		<CusTaxCode>0314214267</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>1</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>1</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>mat hang a</ProdName>
+				<ProdPrice>1</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>kg</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>AA/18E</SerialNo>
+		<SignDate>28/06/2018</SignDate>
+		<Total>1</Total>
+		<VAT_Amount>0</VAT_Amount>
+		<VAT_Rate>0</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:04:04 main.go:99: RouterMiddleware: End request
+2018/06/29 17:21:35 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:21:35 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:21:35 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:21:35 main.go:86: :%!d(string=8080)
+2018/06/29 17:21:35 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:21:38 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:21:38 signatureApi.go:27: <?xml-stylesheet type='text/xsl' href='https://dichvuhanghaiadmindemo.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/HD_DVHANGHAI' ?>     
+<Invoice>
+	<Content Id="SigningData">
+		<Amount>1</Amount>
+		<Amount_words>Một đồng</Amount_words>
+		<ArisingDate>28/06/2018 08:25:09</ArisingDate>
+		<Buyer/>
+		<ComAddress>1295B Nguyễn Thị Định , Phường Cát Lái , Quận 2 , TP Hồ Chí Minh</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG HẢI TÂN CẢNG</ComName>
+		<ComPhone>01669715845</ComPhone>
+		<ComTaxCode>0311297674</ComTaxCode>
+		<CusAddress>dia chi a</CusAddress>
+		<CusBankName/>
+		<CusBankNo>so tai khoan a</CusBankNo>
+		<CusCode>ma so a</CusCode>
+		<CusName>cong ty a</CusName>
+		<CusPhone>dien thoai a</CusPhone>
+		<CusTaxCode>0314214267</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>1</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>1</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>mat hang a</ProdName>
+				<ProdPrice>1</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>kg</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>AA/18E</SerialNo>
+		<SignDate>28/06/2018</SignDate>
+		<Total>1</Total>
+		<VAT_Amount>0</VAT_Amount>
+		<VAT_Rate>0</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>dCuHcDtDhzByOLEhCqgwTkhELBE</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:21:38 main.go:99: RouterMiddleware: End request
+2018/06/29 17:31:18 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:31:18 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:31:18 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:31:18 main.go:86: :%!d(string=8080)
+2018/06/29 17:31:18 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:31:33 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:31:33 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:31:33 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:31:33 main.go:86: :%!d(string=8080)
+2018/06/29 17:31:33 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:31:36 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:31:37 signatureApi.go:27: <?xml-stylesheet type='text/xsl' href='https://dichvuhanghaiadmindemo.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/HD_DVHANGHAI' ?>     
+<Invoice>
+	<Content Id="SigningData">
+		<Amount>1</Amount>
+		<Amount_words>Một đồng</Amount_words>
+		<ArisingDate>28/06/2018 08:25:09</ArisingDate>
+		<Buyer/>
+		<ComAddress>1295B Nguyễn Thị Định , Phường Cát Lái , Quận 2 , TP Hồ Chí Minh</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG HẢI TÂN CẢNG</ComName>
+		<ComPhone>01669715845</ComPhone>
+		<ComTaxCode>0311297674</ComTaxCode>
+		<CusAddress>dia chi a</CusAddress>
+		<CusBankName/>
+		<CusBankNo>so tai khoan a</CusBankNo>
+		<CusCode>ma so a</CusCode>
+		<CusName>cong ty a</CusName>
+		<CusPhone>dien thoai a</CusPhone>
+		<CusTaxCode>0314214267</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>1</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>1</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>mat hang a</ProdName>
+				<ProdPrice>1</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>kg</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>AA/18E</SerialNo>
+		<SignDate>28/06/2018</SignDate>
+		<Total>1</Total>
+		<VAT_Amount>0</VAT_Amount>
+		<VAT_Rate>0</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<string>gXE-6azZjOxngxPBVhDI-wke7pxj0VXnbGr0pZsVoM8=</string></DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:31:37 main.go:99: RouterMiddleware: End request
+2018/06/29 17:32:00 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 17:32:00 debug.go:45: [GIN-debug] POST   /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 17:32:00 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 17:32:00 main.go:86: :%!d(string=8080)
+2018/06/29 17:32:00 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 17:32:02 main.go:93: RouterMiddleware: Before request
+2018/06/29 17:32:02 signatureApi.go:27: <?xml-stylesheet type='text/xsl' href='https://dichvuhanghaiadmindemo.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/HD_DVHANGHAI' ?>     
+<Invoice>
+	<Content Id="SigningData">
+		<Amount>1</Amount>
+		<Amount_words>Một đồng</Amount_words>
+		<ArisingDate>28/06/2018 08:25:09</ArisingDate>
+		<Buyer/>
+		<ComAddress>1295B Nguyễn Thị Định , Phường Cát Lái , Quận 2 , TP Hồ Chí Minh</ComAddress>
+		<ComBankName/>
+		<ComBankNo/>
+		<ComName>CÔNG TY CỔ PHẦN DỊCH VỤ HÀNG HẢI TÂN CẢNG</ComName>
+		<ComPhone>01669715845</ComPhone>
+		<ComTaxCode>0311297674</ComTaxCode>
+		<CusAddress>dia chi a</CusAddress>
+		<CusBankName/>
+		<CusBankNo>so tai khoan a</CusBankNo>
+		<CusCode>ma so a</CusCode>
+		<CusName>cong ty a</CusName>
+		<CusPhone>dien thoai a</CusPhone>
+		<CusTaxCode>0314214267</CusTaxCode>
+		<Extra/>
+		<GrossValue>0</GrossValue>
+		<GrossValue0>1</GrossValue0>
+		<GrossValue10>0</GrossValue10>
+		<GrossValue5>0</GrossValue5>
+		<InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+		<InvoiceNo>1</InvoiceNo>
+		<InvoicePattern>01GTKT0/001</InvoicePattern>
+		<KindOfService/>
+		<Kind_of_Payment>TM</Kind_of_Payment>
+		<Products>
+			<Product>
+				<Amount>1</Amount>
+				<Code/>
+				<Discount>0</Discount>
+				<DiscountAmount>0</DiscountAmount>
+				<Extra1/>
+				<Extra2/>
+				<ProdName>mat hang a</ProdName>
+				<ProdPrice>1</ProdPrice>
+				<ProdQuantity>1</ProdQuantity>
+				<ProdUnit>kg</ProdUnit>
+				<Remark/>
+				<Total>0</Total>
+				<VATAmount>0</VATAmount>
+				<VATRate>0</VATRate>
+			</Product>
+		</Products>
+		<SerialNo>AA/18E</SerialNo>
+		<SignDate>28/06/2018</SignDate>
+		<Total>1</Total>
+		<VAT_Amount>0</VAT_Amount>
+		<VAT_Rate>0</VAT_Rate>
+		<VatAmount0>0</VatAmount0>
+		<VatAmount10>0</VatAmount10>
+		<VatAmount5>0</VatAmount5>
+	</Content>
+	<Signature>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>adafasfsfasf</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+		<SignatureValue>qf3bb5-oof_YXTwfmy8DN6RKmMc9Gd9jZiDsSwidlun1LClEUqr2w6hDEECtd1EOHm3xx3KEA6-m0sqtQicW2nEh0NvaU7ceRxICzuC49lw3Qk1BzJ88dDMLWzfYUDKJMwjnbJBkF7dVh0q1N132_9DXSTvSEyPKCCQoQMkZYmewkhRsk689VoGdn2zhiRuOkOZNVR-s91zQMlw_1xezbykBXA1Odjn0E4DLkpJg1aNJgXMs7sc4QR_q8p1us7AZ0ED9apvZwXITLyZ3WbQ7Memh529hbhkADeU7PLiTtuSrSDBNQA_pzH4kVcML412v9B90sDEbyd5eAOnFQiEarA==</SignatureValue>
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+			<DigestValue>gXE-6azZjOxngxPBVhDI-wke7pxj0VXnbGr0pZsVoM8=</DigestValue>
+			<Reference URI="SigningData">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+			</Reference>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/>
+		</SignedInfo>
+	</Signature>
+</Invoice>
+2018/06/29 17:32:02 main.go:99: RouterMiddleware: End request

@@ -20,9 +20,9 @@ func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 
 func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 	xmlDataString := context.PostForm("xmlData")
-	signature, certificate, err := signatureService.EncryptDataWithCertificate(&xmlDataString);
+	cipherData, err := signatureService.EncryptDataWithCertificate(&xmlDataString);
 	if (err == nil) {
-		result, err := signatureService.InsertSignatureToXmlData(&xmlDataString, &signature, certificate)
+		result, err := signatureService.InsertSignatureToXmlData(&xmlDataString, cipherData)
 		if (err == nil) {
 			log.Println(result);
 		}
