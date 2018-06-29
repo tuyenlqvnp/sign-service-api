@@ -10,14 +10,13 @@ type SignatureApi struct {
 func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 	signatureApiGroup := router.Group("/signature-api")
 	{
-		signatureApiGroup.GET("/certificate", func(context *gin.Context) {
-			self.getCertificateInfo(context);
+		signatureApiGroup.POST("/certificate", func(context *gin.Context) {
+			self.SignWithCertificate(context);
 		})
 	}
 	return signatureApiGroup;
 }
 
-func (self SignatureApi) getCertificateInfo(context *gin.Context) {
-	//pkcsUtils := utils.PKCSUtils{};
-	//pkcsUtils.
+func (self SignatureApi) SignWithCertificate(context *gin.Context) {
+	signatureService.EncryptDataWithCertificate("xml data in here");
 }

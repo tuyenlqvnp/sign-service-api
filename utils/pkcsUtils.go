@@ -8,25 +8,26 @@ import (
 	"errors"
 	"crypto/rsa"
 	"math/big"
+	"encoding/base64"
 )
 
 type PKCSUtils struct {
 }
 
-func (self PKCSUtils) extractData(data []byte, password *string) (interface{}, *x509.Certificate, error) {
-	privateKey, certificate, err := pkcs12.Decode(data, *password)
+func (self PKCSUtils) ExtractData(data []byte, password string) (interface{}, *x509.Certificate, error) {
+	privateKey, certificate, err := pkcs12.Decode(data, password)
 	return privateKey, certificate, err;
 }
 
-func (self PKCSUtils) extractDataFromFile(filePath *string, password *string) (interface{}, *x509.Certificate, error) {
-	data, err := ioutil.ReadFile(*filePath)
+func (self PKCSUtils) ExtractDataFromFile(filePath string, password string) (interface{}, *x509.Certificate, error) {
+	data, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		log.Fatal(err)
 	}
-	return self.extractData(data, password);
+	return self.ExtractData(data, password);
 }
 
-func (self PKCSUtils) verifyCertificate(cert *x509.Certificate) error {
+func (self PKCSUtils) VerifyCertificate(cert *x509.Certificate) error {
 	_, err := cert.Verify(x509.VerifyOptions{})
 	if err == nil {
 		return nil
@@ -49,14 +50,14 @@ func (self PKCSUtils) verifyCertificate(cert *x509.Certificate) error {
 	}
 }
 
-func (self PKCSUtils) encryptData(priv *rsa.PrivateKey, data []byte) (enc []byte, err error) {
+func (self PKCSUtils) EncryptData(priv *rsa.PrivateKey, data []byte) (*string, error) {
 	k := (priv.N.BitLen() + 7) / 8
 	tLen := len(data)
 	// rfc2313, section 8:
 	// The length of the data D shall not be more than k-11 octets
 	if tLen > k-11 {
-		err = errors.New("input size too large")
-		return
+		err := errors.New("input size too large")
+		return nil, err
 	}
 	em := make([]byte, k)
 	em[1] = 1
@@ -66,8 +67,8 @@ func (self PKCSUtils) encryptData(priv *rsa.PrivateKey, data []byte) (enc []byte
 	copy(em[k-tLen:k], data)
 	c := new(big.Int).SetBytes(em)
 	if c.Cmp(priv.N) > 0 {
-		err = errors.New("encryption error")
-		return
+		err := errors.New("encryption error")
+		return nil, err
 	}
 	var m *big.Int
 	var ir *big.Int
@@ -105,6 +106,7 @@ func (self PKCSUtils) encryptData(priv *rsa.PrivateKey, data []byte) (enc []byte
 		m.Mul(m, ir)
 		m.Mod(m, priv.N)
 	}
-	enc = m.Bytes()
-	return
+	enc := m.Bytes()
+	cipherText := base64.URLEncoding.EncodeToString(enc)
+	return &cipherText, nil
 }
