@@ -1,0 +1,42 @@
+2018/06/29 10:42:37 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 10:42:37 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 10:42:37 main.go:81: :%!d(string=)
+2018/06/29 10:42:37 debug.go:45: [GIN-debug] Listening and serving HTTP on :
+2018/06/29 10:43:44 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 10:43:44 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 10:43:44 main.go:81: :%!d(string=)
+2018/06/29 10:43:44 debug.go:45: [GIN-debug] Listening and serving HTTP on :
+2018/06/29 10:44:21 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 10:44:21 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 10:44:21 main.go:82: :%!d(string=8080)
+2018/06/29 10:44:21 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 10:44:28 main.go:89: RouterMiddleware: Before request
+2018/06/29 10:44:28 main.go:95: RouterMiddleware: End request
+2018/06/29 10:44:46 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 10:44:46 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 10:44:46 main.go:82: :%!d(string=8080)
+2018/06/29 10:44:46 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 10:44:46 debug.go:45: [GIN-debug] [ERROR] listen tcp :8080: bind: address already in use
+2018/06/29 10:44:49 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 10:44:49 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 10:44:49 main.go:82: :%!d(string=8080)
+2018/06/29 10:44:49 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 10:44:50 main.go:89: RouterMiddleware: Before request
+2018/06/29 10:44:50 main.go:95: RouterMiddleware: End request
+2018/06/29 10:44:52 main.go:89: RouterMiddleware: Before request
+2018/06/29 10:44:52 main.go:95: RouterMiddleware: End request
