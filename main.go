@@ -35,7 +35,7 @@ func main() {
 
 	// Logger
 	//log.SetOutput(&lumberjack.Logger{
-	//	Filename:   "logs/_payment_service.log",
+	//	Filename:   "logs/_sign_service_api.log",
 	//	MaxSize:    10, // megabytes
 	//	MaxBackups: 10,
 	//	MaxAge:     30,   //days
