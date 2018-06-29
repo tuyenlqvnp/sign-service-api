@@ -17,6 +17,7 @@ import (
 	"github.com/gin-gonic/contrib/gzip"
 	"github.com/gin-contrib/sentry"
 	"github.com/joho/godotenv"
+	"github.com/tuyenlqvnp/sign-service-api/api"
 )
 
 func init() {
@@ -70,6 +71,9 @@ func main() {
 	router.Use(CORSMiddleware())
 	router.Use(sentry.Recovery(raven.DefaultClient, false))
 	router.Use(gzip.Gzip(gzip.DefaultCompression))
+
+	signatureApi := api.SignatureApi{}
+	signatureApi.Init(router);
 
 	// Router Index
 	index := router.Group("/")

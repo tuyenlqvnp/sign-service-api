@@ -40,3 +40,25 @@
 2018/06/29 10:44:50 main.go:95: RouterMiddleware: End request
 2018/06/29 10:44:52 main.go:89: RouterMiddleware: Before request
 2018/06/29 10:44:52 main.go:95: RouterMiddleware: End request
+2018/06/29 14:07:03 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 14:07:03 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 14:07:03 main.go:82: :%!d(string=8080)
+2018/06/29 14:07:03 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 14:15:11 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 14:15:11 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 14:15:11 main.go:82: :%!d(string=8080)
+2018/06/29 14:15:11 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/06/29 14:18:41 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/06/29 14:18:41 debug.go:45: [GIN-debug] GET    /signature-api/certificate --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/06/29 14:18:41 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/06/29 14:18:41 main.go:86: :%!d(string=8080)
+2018/06/29 14:18:41 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
