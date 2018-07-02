@@ -69,7 +69,7 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 	return
 }
 
-func (self SignatureApi) Validate(context *gin.Context) {
+func (self SignatureApi) ValidateSignature(context *gin.Context) {
 	result := response.Base{}
 	context.JSON(http.StatusOK, result)
 	return

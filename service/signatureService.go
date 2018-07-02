@@ -19,13 +19,14 @@ func (self SignatureService) EncryptDataWithCertificate(data *string, certificat
 		if (err == nil) {
 			shaType := strings.Split(certificate.SignatureAlgorithm.String(), "-")[0]
 			hashData := shaUtils.Hash(data, &shaType)
-			cipherText, err := pkcsUtils.EncryptData(private.(*rsa.PrivateKey), []byte(hashData));
+			hashDataText := base64.URLEncoding.EncodeToString(hashData)
+			cipherText, err := pkcsUtils.SignData(private.(*rsa.PrivateKey), hashData, &shaType);
 			if (err == nil) {
 				//log.Println("Ciphertext: " + *cipherText);
 				cipherData.PrivateKey = private
 				cipherData.Certificate = certificate
 				cipherData.CipherText = cipherText
-				cipherData.HashData = &hashData
+				cipherData.HashData = &hashDataText
 				return &cipherData, nil
 			}
 		}

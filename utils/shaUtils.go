@@ -2,7 +2,6 @@ package utils
 
 import (
 	"crypto/sha256"
-	"encoding/base64"
 	"strings"
 	"crypto/sha1"
 	"crypto/sha512"
@@ -11,7 +10,7 @@ import (
 type SHAUtils struct {
 }
 
-func (self SHAUtils) Hash(data *string, shaType *string) (string) {
+func (self SHAUtils) Hash(data *string, shaType *string) ([]byte) {
 	var h = sha256.New()
 	if (strings.ToUpper(*shaType) == "SHA1") {
 		h = sha1.New()
@@ -19,6 +18,5 @@ func (self SHAUtils) Hash(data *string, shaType *string) (string) {
 		h = sha512.New()
 	}
 	h.Write([]byte(*data))
-	sha := base64.URLEncoding.EncodeToString(h.Sum(nil))
-	return sha;
+	return h.Sum(nil);
 }
