@@ -29,11 +29,9 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 		signedData, err := signatureService.InsertSignatureToXmlData(&xmlDataString, cipherData)
 		if (err == nil) {
 			log.Println(result);
-			digitallySignedData := response.DigitallySignedData{}
-			digitallySignedData.Init(signedData)
+			digitallySignedData := response.DigitallySignedData{}.Init(signedData)
 			result.Data = digitallySignedData
 			result.SetStatus(bean.Success)
-			context.JSON(http.StatusOK, result)
 		} else {
 			result.SetStatus(bean.UnexpectedError)
 		}
@@ -41,4 +39,5 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 		result.SetStatus(bean.UnexpectedError)
 	}
 	context.JSON(http.StatusOK, result)
+	return
 }
