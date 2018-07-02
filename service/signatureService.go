@@ -4,6 +4,7 @@ import (
 	"crypto/rsa"
 	"strings"
 	"github.com/tuyenlqvnp/sign-service-api/bean"
+	"encoding/base64"
 )
 
 type SignatureService struct {
@@ -41,7 +42,7 @@ func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cip
 		signature["SignatureValue"] = *cipherData.CipherText
 
 		x509Data := make(map[string]interface{})
-		x509Data["X509Certificate"] = "adafasfsfasf"
+		x509Data["X509Certificate"] = base64.URLEncoding.EncodeToString(cipherData.Certificate.Raw)
 		keyInfo := make(map[string]interface{})
 		keyInfo["X509Data"] = x509Data
 		signature["KeyInfo"] = keyInfo
