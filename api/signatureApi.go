@@ -16,7 +16,10 @@ type SignatureApi struct {
 func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 	signatureApiGroup := router.Group("/signature-api")
 	{
-		signatureApiGroup.POST("/certificate", func(context *gin.Context) {
+		signatureApiGroup.POST("/sign", func(context *gin.Context) {
+			self.SignWithCertificate(context);
+		})
+		signatureApiGroup.POST("/validate", func(context *gin.Context) {
 			self.SignWithCertificate(context);
 		})
 	}
@@ -26,6 +29,21 @@ func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 	result := response.Base{}
 	sourceFile, _, err := context.Request.FormFile("certificate")
+	xmlDataString := context.PostForm("xmlData")
+	password := context.PostForm("password")
+
+	if (xmlDataString == "") {
+		result.SetStatus(bean.UnexpectedError)
+		context.JSON(http.StatusOK, result)
+		return
+	}
+
+	if (password == "") {
+		result.SetStatus(bean.UnexpectedError)
+		context.JSON(http.StatusOK, result)
+		return
+	}
+
 	defer sourceFile.Close()
 	if err != nil {
 		result.SetStatus(bean.UnexpectedError)
@@ -34,8 +52,6 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 		if _, err := io.Copy(buf, sourceFile); err != nil {
 			result.SetStatus(bean.UnexpectedError)
 		}
-		xmlDataString := context.PostForm("xmlData")
-		password := context.PostForm("password")
 		cipherData, err := signatureService.EncryptDataWithCertificate(&xmlDataString, buf.Bytes(), password);
 		if (err == nil) {
 			signedData, err := signatureService.InsertSignatureToXmlData(&xmlDataString, cipherData)
@@ -51,6 +67,12 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 			result.SetStatus(bean.UnexpectedError)
 		}
 	}
+	context.JSON(http.StatusOK, result)
+	return
+}
+
+func (self SignatureApi) Validate(context *gin.Context) {
+	result := response.Base{}
 	context.JSON(http.StatusOK, result)
 	return
 }
