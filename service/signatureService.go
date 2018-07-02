@@ -10,9 +10,9 @@ import (
 type SignatureService struct {
 }
 
-func (self SignatureService) EncryptDataWithCertificate(data *string) (*bean.CipherData, error) {
+func (self SignatureService) EncryptDataWithCertificate(data *string, certificateData []byte, password string) (*bean.CipherData, error) {
 	cipherData := bean.CipherData{}
-	private, certificate, err := pkcsUtils.ExtractDataFromFile("/Users/thaibao/Desktop/my256.p12", "654321");
+	private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
 	if (err == nil) {
 		// check certificate
 		err := pkcsUtils.VerifyCertificate(certificate);
