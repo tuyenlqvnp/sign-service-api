@@ -2,7 +2,6 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"log"
 	"github.com/tuyenlqvnp/sign-service-api/response"
 	"net/http"
 	"github.com/tuyenlqvnp/sign-service-api/bean"
@@ -56,7 +55,6 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 		if (err == nil) {
 			signedData, err := signatureService.InsertSignatureToXmlData(&xmlDataString, cipherData)
 			if (err == nil) {
-				log.Println(result);
 				digitallySignedData := response.DigitallySignedData{}.Init(signedData)
 				result.Data = digitallySignedData
 				result.SetStatus(bean.Success)
