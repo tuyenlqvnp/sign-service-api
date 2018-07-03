@@ -6,5 +6,5 @@ type CipherData struct {
 	HashData    *string
 	PrivateKey  interface{}
 	Certificate *x509.Certificate
-	CipherText  *string
+	Signature   *string
 }

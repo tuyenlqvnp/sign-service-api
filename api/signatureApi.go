@@ -19,7 +19,7 @@ func (self SignatureApi) Init(router *gin.Engine) *gin.RouterGroup {
 			self.SignWithCertificate(context);
 		})
 		signatureApiGroup.POST("/validate", func(context *gin.Context) {
-			self.SignWithCertificate(context);
+			self.ValidateSignature(context);
 		})
 	}
 	return signatureApiGroup;
@@ -51,7 +51,7 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 		if _, err := io.Copy(buf, sourceFile); err != nil {
 			result.SetStatus(bean.UnexpectedError)
 		}
-		cipherData, err := signatureService.EncryptDataWithCertificate(&xmlDataString, buf.Bytes(), password);
+		cipherData, err := signatureService.SignDataWithCertificate(&xmlDataString, buf.Bytes(), password);
 		if (err == nil) {
 			signedData, err := signatureService.InsertSignatureToXmlData(&xmlDataString, cipherData)
 			if (err == nil) {
@@ -71,6 +71,42 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 
 func (self SignatureApi) ValidateSignature(context *gin.Context) {
 	result := response.Base{}
+	sourceFile, _, err := context.Request.FormFile("certificate")
+	xmlDataString := context.PostForm("xmlData")
+	password := context.PostForm("password")
+
+	if (xmlDataString == "") {
+		result.SetStatus(bean.UnexpectedError)
+		context.JSON(http.StatusOK, result)
+		return
+	}
+
+	if (password == "") {
+		result.SetStatus(bean.UnexpectedError)
+		context.JSON(http.StatusOK, result)
+		return
+	}
+
+	defer sourceFile.Close()
+	if err != nil {
+		result.SetStatus(bean.UnexpectedError)
+	} else {
+		buf := bytes.NewBuffer(nil)
+		if _, err := io.Copy(buf, sourceFile); err != nil {
+			result.SetStatus(bean.UnexpectedError)
+		}
+		originData, signatureInfo, err := signatureService.RemoveSignatureFromXmlData(&xmlDataString);
+		if (err == nil) {
+ 			err := signatureService.ValidateSignature(signatureInfo, &originData, buf.Bytes(), password)
+			if (err == nil) {
+				result.SetStatus(bean.Success)
+			} else {
+				result.SetStatus(bean.UnexpectedError)
+			}
+		} else {
+			result.SetStatus(bean.UnexpectedError)
+		}
+	}
 	context.JSON(http.StatusOK, result)
 	return
 }

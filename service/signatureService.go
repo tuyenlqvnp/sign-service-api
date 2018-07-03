@@ -10,7 +10,14 @@ import (
 type SignatureService struct {
 }
 
-func (self SignatureService) EncryptDataWithCertificate(data *string, certificateData []byte, password string) (*bean.CipherData, error) {
+func (self SignatureService) SignDataWithCertificate(data *string, certificateData []byte, password string) (*bean.CipherData, error) {
+	/*xmlData, err := xmlUtils.ParseFromStringToInterface(data);
+	invoice := xmlData["Invoice"].(map[string]interface{})
+	xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
+	xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
+	temp := strings.Split(*data, "<Invoice>")[0]
+	dataTemp := (temp + xmlDataStringResult)
+	data = &dataTemp*/
 	cipherData := bean.CipherData{}
 	private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
 	if (err == nil) {
@@ -19,13 +26,12 @@ func (self SignatureService) EncryptDataWithCertificate(data *string, certificat
 		if (err == nil) {
 			shaType := strings.Split(certificate.SignatureAlgorithm.String(), "-")[0]
 			hashData := shaUtils.Hash(data, &shaType)
-			hashDataText := base64.URLEncoding.EncodeToString(hashData)
-			cipherText, err := pkcsUtils.SignData(private.(*rsa.PrivateKey), hashData, &shaType);
+			signature, err := pkcsUtils.SignData(private.(*rsa.PrivateKey), hashData, &shaType);
 			if (err == nil) {
-				//log.Println("Ciphertext: " + *cipherText);
 				cipherData.PrivateKey = private
 				cipherData.Certificate = certificate
-				cipherData.CipherText = cipherText
+				cipherData.Signature = signature
+				hashDataText := base64.URLEncoding.EncodeToString(hashData)
 				cipherData.HashData = &hashDataText
 				return &cipherData, nil
 			}
@@ -34,13 +40,40 @@ func (self SignatureService) EncryptDataWithCertificate(data *string, certificat
 	return nil, err;
 }
 
+func (self SignatureService) ValidateSignature(signature map[string]interface{}, data *string, certificateData []byte, password string) (error) {
+	private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
+	if (err == nil) {
+		err := pkcsUtils.VerifyCertificate(certificate);
+		if (err == nil) {
+			shaType := strings.Split(certificate.SignatureAlgorithm.String(), "-")[0]
+			hashData := shaUtils.Hash(data, &shaType)
+			err := pkcsUtils.ValidateSignedData(&private.(*rsa.PrivateKey).PublicKey, signature["SignatureValue"].(string), hashData, &shaType)
+			return err
+		}
+	}
+	return nil
+}
+
+func (self SignatureService) RemoveSignatureFromXmlData(xmlDataString *string) (string, map[string]interface{}, error) {
+	path := "Invoice.Signature"
+	xmlData, signatureInfo, err := xmlUtils.RemoveElement(xmlDataString, path);
+	if (err == nil) {
+		invoice := xmlData["Invoice"].(map[string]interface{})
+		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "	", "Invoice", "")
+		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
+		if (err == nil) {
+			return temp + "\n" + xmlDataStringResult, signatureInfo, err
+		}
+	}
+	return "", signatureInfo, err
+}
+
 func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cipherData *bean.CipherData) (string, error) {
-	xmlData := make(map[string]interface{});
 	xmlData, err := xmlUtils.ParseFromStringToInterface(xmlDataString);
 	if (err == nil) {
 		invoice := xmlData["Invoice"].(map[string]interface{})
 		signature := make(map[string]interface{})
-		signature["SignatureValue"] = *cipherData.CipherText
+		signature["SignatureValue"] = *cipherData.Signature
 
 		x509Data := make(map[string]interface{})
 		x509Data["X509Certificate"] = base64.URLEncoding.EncodeToString(cipherData.Certificate.Raw)
@@ -70,10 +103,11 @@ func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cip
 		signedInfo["DigestValue"] = *cipherData.HashData
 
 		invoice["Signature"] = signature
-		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "	", "Invoice", "")
+		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
+		xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
 		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
 		if (err == nil) {
-			return temp + "\n" + xmlDataStringResult, err
+			return temp + xmlDataStringResult, err
 		}
 	}
 	return "", err
