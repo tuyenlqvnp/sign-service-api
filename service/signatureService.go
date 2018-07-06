@@ -10,14 +10,15 @@ import (
 type SignatureService struct {
 }
 
+func (self SignatureService) XmlMinify(data *string) *string {
+	//m := minify.New()
+	//m.AddFuncRegexp(regexp.MustCompile("[/+]xml$"), xml.Minify)
+	//s, _ := m.String("", *data)
+	return data
+}
+
 func (self SignatureService) SignDataWithCertificate(data *string, certificateData []byte, password string) (*bean.CipherData, error) {
-	/*xmlData, err := xmlUtils.ParseFromStringToInterface(data);
-	invoice := xmlData["Invoice"].(map[string]interface{})
-	xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
-	xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
-	temp := strings.Split(*data, "<Invoice>")[0]
-	dataTemp := (temp + xmlDataStringResult)
-	data = &dataTemp*/
+	data = self.XmlMinify(data)
 	cipherData := bean.CipherData{}
 	private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
 	if (err == nil) {
@@ -59,10 +60,12 @@ func (self SignatureService) RemoveSignatureFromXmlData(xmlDataString *string) (
 	xmlData, signatureInfo, err := xmlUtils.RemoveElement(xmlDataString, path);
 	if (err == nil) {
 		invoice := xmlData["Invoice"].(map[string]interface{})
-		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "	", "Invoice", "")
+		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
+		xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
+		minifiedXml := self.XmlMinify(&xmlDataStringResult)
 		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
 		if (err == nil) {
-			return temp + "\n" + xmlDataStringResult, signatureInfo, err
+			return temp + *minifiedXml, signatureInfo, err
 		}
 	}
 	return "", signatureInfo, err
@@ -105,9 +108,10 @@ func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cip
 		invoice["Signature"] = signature
 		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
 		xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
+		minifiedXml := self.XmlMinify(&xmlDataStringResult)
 		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
 		if (err == nil) {
-			return temp + xmlDataStringResult, err
+			return temp + *minifiedXml, err
 		}
 	}
 	return "", err

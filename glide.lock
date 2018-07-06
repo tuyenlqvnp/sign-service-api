@@ -1,10 +1,12 @@
-hash: c65cd3e2821deddaf4d521d608d8a7840f123aace5c9eb03af39e61173dfae0e
-updated: 2018-06-29T10:39:44.771376+07:00
+hash: e27d4143cbb2c5acac7bdd7f02a2addf23ccecfe3d9d9b1f11a53d2633fa98bf
+updated: 2018-07-06T09:20:03.347159+07:00
 imports:
 - name: github.com/aws/aws-sdk-go
-  version: 5e98666858b97db54a61044bb1150d3b81436860
+  version: 554c8763b0d746658fe356cf368f5bee064aba09
   subpackages:
   - aws
+- name: github.com/boj/redistore
+  version: 4562487a4bee9a7c272b72bfaeda4917d0a47ab9
 - name: github.com/certifi/gocertifi
   version: deb3ae2ef2610fde3330947281941c562861188b
 - name: github.com/clbanning/mxj
@@ -15,6 +17,11 @@ imports:
   - request
 - name: github.com/durango/go-credit-card
   version: 986a3cc0c28230050dfc9008be2b147ebdbd8459
+- name: github.com/garyburd/redigo
+  version: 3827f8a582e95ef536e5db70b362771259ba1a04
+  subpackages:
+  - internal
+  - redis
 - name: github.com/getsentry/raven-go
   version: 563b81fc02b75d664e54da31f787c2cc2186780b
 - name: github.com/gin-contrib/cors
@@ -43,6 +50,12 @@ imports:
   - proto
 - name: github.com/google/uuid
   version: 064e2069ce9c359c118179501254f67d7d37ba24
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/securecookie
+  version: e59506cc896acb7f7bf732d4fdf5e25f7ccd8983
+- name: github.com/gorilla/sessions
+  version: 7087b4d669d1bc3da42fb4e2eda73ae139a24439
 - name: github.com/jinzhu/gorm
   version: 6ed508ec6a4ecb3531899a69cbc746ccf65a4166
   subpackages:
@@ -60,6 +73,8 @@ imports:
   version: 12b6f73e6084dad08a7c6e575284b177ecafbc71
   subpackages:
   - assert
+- name: github.com/tdewolff/minify
+  version: 8d72a4127ae33b755e95bffede9b92e396267ce2
 - name: github.com/ugorji/go
   version: 16f09ef744fd4227190f626f14cfdefb14362b3b
   subpackages:
@@ -69,6 +84,8 @@ imports:
   subpackages:
   - bcrypt
   - pbkdf2
+  - pkcs12
+  - pkcs12/internal/rc2
 - name: golang.org/x/sys
   version: f6cff0780e542efa0c8e864dc8fa522808f6a598
   subpackages:

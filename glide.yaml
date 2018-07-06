@@ -48,3 +48,5 @@ import:
   version: ^1.13.29
   subpackages:
   - aws
+- package: github.com/tdewolff/minify
+  version: v2.3.5
