@@ -3252,3 +3252,114 @@ aaaa</doc>
 2018/07/06 10:05:45 main.go:93: RouterMiddleware: Before request
 2018/07/06 10:05:49 main.go:99: RouterMiddleware: End request
 2018/07/06 10:06:23 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:07:41 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:07:41 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:07:41 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:07:41 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:07:41 main.go:86: :%!d(string=8080)
+2018/07/06 10:07:41 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:07:44 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:07:59 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:07:59 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:07:59 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:07:59 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:07:59 main.go:86: :%!d(string=8080)
+2018/07/06 10:07:59 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:08:05 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:08:09 main.go:99: RouterMiddleware: End request
+2018/07/06 10:08:14 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:08:14 main.go:99: RouterMiddleware: End request
+2018/07/06 10:08:22 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:08:22 main.go:99: RouterMiddleware: End request
+2018/07/06 10:08:27 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:08:27 main.go:99: RouterMiddleware: End request
+2018/07/06 10:08:59 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:08:59 main.go:99: RouterMiddleware: End request
+2018/07/06 10:09:20 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:09:20 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:09:20 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:09:20 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:09:20 main.go:86: :%!d(string=8080)
+2018/07/06 10:09:20 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:09:22 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:09:22 main.go:99: RouterMiddleware: End request
+2018/07/06 10:09:23 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:09:23 main.go:99: RouterMiddleware: End request
+2018/07/06 10:09:25 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:09:25 main.go:99: RouterMiddleware: End request
+2018/07/06 10:09:31 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:09:49 main.go:99: RouterMiddleware: End request
+2018/07/06 10:10:30 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:11:24 main.go:99: RouterMiddleware: End request
+2018/07/06 10:11:34 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:11:37 main.go:99: RouterMiddleware: End request
+2018/07/06 10:11:45 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:12:16 main.go:99: RouterMiddleware: End request
+2018/07/06 10:12:22 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:12:33 main.go:99: RouterMiddleware: End request
+2018/07/06 10:12:47 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:13:00 main.go:99: RouterMiddleware: End request
+2018/07/06 10:13:12 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:13:12 main.go:99: RouterMiddleware: End request
+2018/07/06 10:13:20 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:13:20 main.go:99: RouterMiddleware: End request
+2018/07/06 10:14:50 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:14:52 main.go:99: RouterMiddleware: End request
+2018/07/06 10:14:57 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:17:15 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:17:15 main.go:99: RouterMiddleware: End request
+2018/07/06 10:17:16 main.go:99: RouterMiddleware: End request
+2018/07/06 10:17:21 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:21:07 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:21:07 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:21:07 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:21:07 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:21:07 main.go:86: :%!d(string=8080)
+2018/07/06 10:21:07 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:21:21 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:21:21 digitallySignedData.go:10: <?xml-stylesheet type='text/xsl' href='https://minhnguyetadmin.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/MINHNGUYETVAT' ?><Invoice><Content Id="SigningData"><Amount>18490000</Amount><Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words><ArisingDate>14/11/2017 00:00:00</ArisingDate><Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer><ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress><ComBankName/><ComBankNo/><ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName><ComPhone>02866811465</ComPhone><ComTaxCode>0312289651</ComTaxCode><CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress><CusBankName/><CusBankNo/><CusCode>5645</CusCode><CusName/><CusPhone/><CusTaxCode>0307672788</CusTaxCode><Extra/><GrossValue>0</GrossValue><GrossValue0>0</GrossValue0><GrossValue10>0</GrossValue10><GrossValue5>0</GrossValue5><InvoiceName>HÛa don gi· tr? gia tang</InvoiceName><InvoiceNo>1</InvoiceNo><InvoicePattern>01GTKT0/001</InvoicePattern><KindOfService/><Kind_of_Payment>TM/CK</Kind_of_Payment><Products><Product><Amount>16809091</Amount><Code/><Discount>0</Discount><DiscountAmount>0</DiscountAmount><Extra1/><Extra2/><ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName><ProdPrice>16809091</ProdPrice><ProdQuantity>1</ProdQuantity><ProdUnit>B?</ProdUnit><Remark/><Total>0</Total><VATAmount>0</VATAmount><VATRate>0</VATRate></Product></Products><SerialNo>MN/17E</SerialNo><Total>16809091</Total><VAT_Amount>1680909</VAT_Amount><VAT_Rate>10</VAT_Rate><VatAmount0>0</VatAmount0><VatAmount10>0</VatAmount10><VatAmount5>0</VatAmount5></Content><Signature><KeyInfo><X509Data><X509Certificate>MIIDpjCCAo4CCQD3wforE8gLLDANBgkqhkiG9w0BAQsFADCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wHhcNMTgwNjI2MDc0MzM5WhcNMTkwNjI2MDc0MzM5WjCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJEF2O6LRS6CANpCY8v5cqmn0i4_9cgu-c7kBz3s0swoMeHfEAktudH-dYuoTIz8kv2srFmQOmSJbUAPYU1CiMi8xwkCYO9DRvTlNq1kx-3PJ74uWhXJSRraEj3OjWiFbKJbjEhvOQI-rOrCc9fc9pdsypjqh4xlVsN4ROMr3xwhBpkj8zTAexAFes0gidwUcBX0Qo7ILeiU85cmXDP9Uyjg4B9SU9axWlbYYvAoDubexLZjdQPA67zJm5fG3wau8gkB08bDRh5ZSxYuO7XPAp-JvtqS77wlV8SuVeXpFeAHwfysCGcjjtJsOztngWBHsluhOCXX6y7w-C20xdzMBtAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAEXrSBBw6RcUtbECpzVk8V12gm3tj7VDItIBwtHXWrz_GRFiiRWOZjX2LljJZ5JeX7ilr7wMInkp6Qv6J9wiGoeMLdQoWzhNWLNvg3CZIAu8_J6eGeBvRzld1DPODs_GcOuPDsd1QLgcqJ93BqN70tnpWWiJXlUzEk_OnjqYn-K-yM00E6M21r12K50XfpIJOGDhG1vyaOS9kOjMIFiYSrIh8mrwRA3B75cryc4guny7cgZAnZw3LnKXslJPEGOeJqhjXxHaNa4QXmCqByGPihJFhBX34zNCsb0kJaePB_RSBs_93zss6tc0QE-NDrnhGmmC7_VVMJNmB0MK3clnglQ=</X509Certificate></X509Data></KeyInfo><SignatureValue>CkDe3n1CzI1QDZKjG-FyZ2pkJBL0d3k6c4PHA88P95AvnyY7rRuYWgytZbqp8_iJdumePS7n5gQaunXb10W8KkNXVAJUhXmVV0KoQdgk94tsVcSnOx_wPtRLPsV3iK-Aces2vuOP1t7wjoZ5UpUI4wKz8NMdO9Ccrz7aOj9BTX8nAFfs71xN-ELaDrvi3pGG788l5xPo1d4xpNEd-3ODgMQ8_wbV-2PPHmjumRqLetahlcwL46hhsrJncICwmkdtB3ZmdD_8CaUV5GO4p7gQ2LaZyfq67aRIkR35FOqq2EzuvvHQQ8jtVX-nI7ntx2ebw0AtTMDTJFFeOOt2vEEljA==</SignatureValue><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/><DigestValue>DzkjnAmk5da-fAkLXfi3tvCLfyPVmge6N1f38mvn2DI=</DigestValue><Reference URI="SigningData"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms></Reference><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/></SignedInfo></Signature></Invoice>
+2018/07/06 10:21:21 main.go:99: RouterMiddleware: End request
+2018/07/06 10:24:53 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:27:51 digitallySignedData.go:10: <?xml-stylesheet type='text/xsl' href='https://minhnguyetadmin.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/MINHNGUYETVAT' ?><Invoice><Content Id="SigningData"><Amount>18490000</Amount><Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words><ArisingDate>14/11/2017 00:00:00</ArisingDate><Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer><ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress><ComBankName/><ComBankNo/><ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName><ComPhone>02866811465</ComPhone><ComTaxCode>0312289651</ComTaxCode><CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress><CusBankName/><CusBankNo/><CusCode>5645</CusCode><CusName/><CusPhone/><CusTaxCode>0307672788</CusTaxCode><Extra/><GrossValue>0</GrossValue><GrossValue0>0</GrossValue0><GrossValue10>0</GrossValue10><GrossValue5>0</GrossValue5><InvoiceName>HÛa don gi· tr? gia tang</InvoiceName><InvoiceNo>1</InvoiceNo><InvoicePattern>01GTKT0/001</InvoicePattern><KindOfService/><Kind_of_Payment>TM/CK</Kind_of_Payment><Products><Product><Amount>16809091</Amount><Code/><Discount>0</Discount><DiscountAmount>0</DiscountAmount><Extra1/><Extra2/><ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName><ProdPrice>16809091</ProdPrice><ProdQuantity>1</ProdQuantity><ProdUnit>B?</ProdUnit><Remark/><Total>0</Total><VATAmount>0</VATAmount><VATRate>0</VATRate></Product></Products><SerialNo>MN/17E</SerialNo><Total>16809091</Total><VAT_Amount>1680909</VAT_Amount><VAT_Rate>10</VAT_Rate><VatAmount0>0</VatAmount0><VatAmount10>0</VatAmount10><VatAmount5>0</VatAmount5></Content><Signature><KeyInfo><X509Data><X509Certificate>MIIDpjCCAo4CCQD3wforE8gLLDANBgkqhkiG9w0BAQsFADCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wHhcNMTgwNjI2MDc0MzM5WhcNMTkwNjI2MDc0MzM5WjCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJEF2O6LRS6CANpCY8v5cqmn0i4_9cgu-c7kBz3s0swoMeHfEAktudH-dYuoTIz8kv2srFmQOmSJbUAPYU1CiMi8xwkCYO9DRvTlNq1kx-3PJ74uWhXJSRraEj3OjWiFbKJbjEhvOQI-rOrCc9fc9pdsypjqh4xlVsN4ROMr3xwhBpkj8zTAexAFes0gidwUcBX0Qo7ILeiU85cmXDP9Uyjg4B9SU9axWlbYYvAoDubexLZjdQPA67zJm5fG3wau8gkB08bDRh5ZSxYuO7XPAp-JvtqS77wlV8SuVeXpFeAHwfysCGcjjtJsOztngWBHsluhOCXX6y7w-C20xdzMBtAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAEXrSBBw6RcUtbECpzVk8V12gm3tj7VDItIBwtHXWrz_GRFiiRWOZjX2LljJZ5JeX7ilr7wMInkp6Qv6J9wiGoeMLdQoWzhNWLNvg3CZIAu8_J6eGeBvRzld1DPODs_GcOuPDsd1QLgcqJ93BqN70tnpWWiJXlUzEk_OnjqYn-K-yM00E6M21r12K50XfpIJOGDhG1vyaOS9kOjMIFiYSrIh8mrwRA3B75cryc4guny7cgZAnZw3LnKXslJPEGOeJqhjXxHaNa4QXmCqByGPihJFhBX34zNCsb0kJaePB_RSBs_93zss6tc0QE-NDrnhGmmC7_VVMJNmB0MK3clnglQ=</X509Certificate></X509Data></KeyInfo><SignatureValue>CkDe3n1CzI1QDZKjG-FyZ2pkJBL0d3k6c4PHA88P95AvnyY7rRuYWgytZbqp8_iJdumePS7n5gQaunXb10W8KkNXVAJUhXmVV0KoQdgk94tsVcSnOx_wPtRLPsV3iK-Aces2vuOP1t7wjoZ5UpUI4wKz8NMdO9Ccrz7aOj9BTX8nAFfs71xN-ELaDrvi3pGG788l5xPo1d4xpNEd-3ODgMQ8_wbV-2PPHmjumRqLetahlcwL46hhsrJncICwmkdtB3ZmdD_8CaUV5GO4p7gQ2LaZyfq67aRIkR35FOqq2EzuvvHQQ8jtVX-nI7ntx2ebw0AtTMDTJFFeOOt2vEEljA==</SignatureValue><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/><DigestValue>DzkjnAmk5da-fAkLXfi3tvCLfyPVmge6N1f38mvn2DI=</DigestValue><Reference URI="SigningData"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms></Reference><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/></SignedInfo></Signature></Invoice>
+2018/07/06 10:27:51 main.go:99: RouterMiddleware: End request
+2018/07/06 10:31:47 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:31:47 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:31:47 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:31:47 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:31:47 main.go:86: :%!d(string=8080)
+2018/07/06 10:31:47 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:31:54 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:32:09 digitallySignedData.go:10: <?xml-stylesheet type='text/xsl' href='https://minhnguyetadmin.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/MINHNGUYETVAT' ?><Invoice><Content Id="SigningData"><Amount>18490000</Amount><Amount_words>Mu?i t·m tri?u b?n tram chÌn muoi nghÏn d?ng</Amount_words><ArisingDate>14/11/2017 00:00:00</ArisingDate><Buyer>C‘NG TY T¿I CHÕNH TNHH M?T TH¿NH VI N HOME CREDIT VI?T NAM</Buyer><ComAddress>363 Vı Van T?n, Phu?ng 5, Qu?n 3, Tp H? ChÌ Minh, Vi?t Nam</ComAddress><ComBankName/><ComBankNo/><ComName>C‘NG TY THHH THUONG M?I V¿ K? THU?T D?CH V? MINH NGUY?T</ComName><ComPhone>02866811465</ComPhone><ComTaxCode>0312289651</ComTaxCode><CusAddress>T?ng 1,194 Golden Building, 473 –i?n BiÍn Ph?, Phu?ng 25, Qu?n BÏnh Th?nh, TP. HCM</CusAddress><CusBankName/><CusBankNo/><CusCode>5645</CusCode><CusName/><CusPhone/><CusTaxCode>0307672788</CusTaxCode><Extra/><GrossValue>0</GrossValue><GrossValue0>0</GrossValue0><GrossValue10>0</GrossValue10><GrossValue5>0</GrossValue5><InvoiceName>HÛa don gi· tr? gia tang</InvoiceName><InvoiceNo>1</InvoiceNo><InvoicePattern>01GTKT0/001</InvoicePattern><KindOfService/><Kind_of_Payment>TM/CK</Kind_of_Payment><Products><Product><Amount>16809091</Amount><Code/><Discount>0</Discount><DiscountAmount>0</DiscountAmount><Extra1/><Extra2/><ProdName>–I?N THO?I DI –?NG SAMSUNG GALAXY S8 64GB V¿NG C‘NG TY M?I (G950)</ProdName><ProdPrice>16809091</ProdPrice><ProdQuantity>1</ProdQuantity><ProdUnit>B?</ProdUnit><Remark/><Total>0</Total><VATAmount>0</VATAmount><VATRate>0</VATRate></Product></Products><SerialNo>MN/17E</SerialNo><Total>16809091</Total><VAT_Amount>1680909</VAT_Amount><VAT_Rate>10</VAT_Rate><VatAmount0>0</VatAmount0><VatAmount10>0</VatAmount10><VatAmount5>0</VatAmount5></Content><Signature><KeyInfo><X509Data><X509Certificate>MIIDpjCCAo4CCQD3wforE8gLLDANBgkqhkiG9w0BAQsFADCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wHhcNMTgwNjI2MDc0MzM5WhcNMTkwNjI2MDc0MzM5WjCBlDELMAkGA1UEBhMCVk4xFDASBgNVBAgMC0hvIENoaSBNaW5oMRQwEgYDVQQHDAtIbyBDaGkgTWluaDEQMA4GA1UECgwHVmlldHRlbDEQMA4GA1UECwwHVmlldHRlbDEQMA4GA1UEAwwHVmlldHRlbDEjMCEGCSqGSIb3DQEJARYUdmlldHRlbC5jYUBnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJEF2O6LRS6CANpCY8v5cqmn0i4_9cgu-c7kBz3s0swoMeHfEAktudH-dYuoTIz8kv2srFmQOmSJbUAPYU1CiMi8xwkCYO9DRvTlNq1kx-3PJ74uWhXJSRraEj3OjWiFbKJbjEhvOQI-rOrCc9fc9pdsypjqh4xlVsN4ROMr3xwhBpkj8zTAexAFes0gidwUcBX0Qo7ILeiU85cmXDP9Uyjg4B9SU9axWlbYYvAoDubexLZjdQPA67zJm5fG3wau8gkB08bDRh5ZSxYuO7XPAp-JvtqS77wlV8SuVeXpFeAHwfysCGcjjtJsOztngWBHsluhOCXX6y7w-C20xdzMBtAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAEXrSBBw6RcUtbECpzVk8V12gm3tj7VDItIBwtHXWrz_GRFiiRWOZjX2LljJZ5JeX7ilr7wMInkp6Qv6J9wiGoeMLdQoWzhNWLNvg3CZIAu8_J6eGeBvRzld1DPODs_GcOuPDsd1QLgcqJ93BqN70tnpWWiJXlUzEk_OnjqYn-K-yM00E6M21r12K50XfpIJOGDhG1vyaOS9kOjMIFiYSrIh8mrwRA3B75cryc4guny7cgZAnZw3LnKXslJPEGOeJqhjXxHaNa4QXmCqByGPihJFhBX34zNCsb0kJaePB_RSBs_93zss6tc0QE-NDrnhGmmC7_VVMJNmB0MK3clnglQ=</X509Certificate></X509Data></KeyInfo><SignatureValue>IIDftHxTDIzNKBMeZXW9XeDNW8FbxcbRyRyRPOBV4_ny11zWbARY6y1I6bthfPHvhZakK5DI56o4AAPVZxhO_6SayO1XtnDZuXXXLKM46ZgIW_akUTVN-WRBoyLEB88FFPc2hEkSfJ79_vIvu1tIEZ8Bgw0rFfjr-ALYQRAJFLD7KXzyrUmVFrJHqbLSmEi4R_sXLypMqrxTAedLN_sgdmwr7EsgwhpVzoyzxxAAKhozlkMHLcRiu34QCmYZORVJoj7I5rNzmYc6BtFatfMOK2t1fVmiijlOt_AIqEcBF7ZrgoPZvWCFtv_RAtqcwn4rkQNv9wqrnVDD_Bz7BJCy-Q==</SignatureValue><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/><DigestValue>mluOfGBQOSaA7l0OAGBb2tV2k01y5Cm3UGsqv6ZPkUo=</DigestValue><Reference URI="SigningData"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms></Reference><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256"/></SignedInfo></Signature></Invoice>
+2018/07/06 10:32:09 main.go:99: RouterMiddleware: End request
+2018/07/06 10:33:01 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:33:01 main.go:99: RouterMiddleware: End request
+2018/07/06 10:33:03 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:33:03 main.go:99: RouterMiddleware: End request
+2018/07/06 10:33:17 debug.go:45: [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2018/07/06 10:33:17 debug.go:45: [GIN-debug] POST   /signature-api/sign       --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func1 (6 handlers)
+2018/07/06 10:33:17 debug.go:45: [GIN-debug] POST   /signature-api/validate   --> github.com/tuyenlqvnp/sign-service-api/api.SignatureApi.Init.func2 (6 handlers)
+2018/07/06 10:33:17 debug.go:45: [GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2018/07/06 10:33:17 main.go:86: :%!d(string=8080)
+2018/07/06 10:33:17 debug.go:45: [GIN-debug] Listening and serving HTTP on :8080
+2018/07/06 10:33:34 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:33:38 main.go:99: RouterMiddleware: End request
+2018/07/06 10:33:43 main.go:93: RouterMiddleware: Before request
+2018/07/06 10:33:47 main.go:99: RouterMiddleware: End request

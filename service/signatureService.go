@@ -5,36 +5,50 @@ import (
 	"strings"
 	"github.com/tuyenlqvnp/sign-service-api/bean"
 	"encoding/base64"
+	"github.com/tdewolff/minify"
+	"regexp"
+	"github.com/tdewolff/minify/xml"
 )
 
 type SignatureService struct {
 }
 
 func (self SignatureService) XmlMinify(data *string) *string {
-	//m := minify.New()
-	//m.AddFuncRegexp(regexp.MustCompile("[/+]xml$"), xml.Minify)
-	//s, _ := m.String("", *data)
-	return data
+	m := minify.New()
+	m.AddFuncRegexp(regexp.MustCompile("[/+]xml$"), xml.Minify)
+	s, _ := m.String("", *data)
+	return &s
 }
 
 func (self SignatureService) SignDataWithCertificate(data *string, certificateData []byte, password string) (*bean.CipherData, error) {
-	data = self.XmlMinify(data)
-	cipherData := bean.CipherData{}
-	private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
+	xmlData, err := xmlUtils.ParseFromStringToInterface(data);
 	if (err == nil) {
-		// check certificate
-		err := pkcsUtils.VerifyCertificate(certificate);
+		invoice := xmlData["Invoice"].(map[string]interface{})
+		xmlDataStringResult, err := xmlUtils.ParseFromInterfaceToString(invoice, "", "", "Invoice", "")
+		xmlDataStringResult = strings.Replace(xmlDataStringResult, "\n", "", -1)
+		minifiedXml := self.XmlMinify(&xmlDataStringResult)
+		temp := strings.Split(*data, "<Invoice>")[0]
 		if (err == nil) {
-			shaType := strings.Split(certificate.SignatureAlgorithm.String(), "-")[0]
-			hashData := shaUtils.Hash(data, &shaType)
-			signature, err := pkcsUtils.SignData(private.(*rsa.PrivateKey), hashData, &shaType);
+			temp = temp + *minifiedXml
+			data = self.XmlMinify(&temp)
+			cipherData := bean.CipherData{}
+			private, certificate, err := pkcsUtils.ExtractData(certificateData, password);
 			if (err == nil) {
-				cipherData.PrivateKey = private
-				cipherData.Certificate = certificate
-				cipherData.Signature = signature
-				hashDataText := base64.URLEncoding.EncodeToString(hashData)
-				cipherData.HashData = &hashDataText
-				return &cipherData, nil
+				// check certificate
+				err := pkcsUtils.VerifyCertificate(certificate);
+				if (err == nil) {
+					shaType := strings.Split(certificate.SignatureAlgorithm.String(), "-")[0]
+					hashData := shaUtils.Hash(data, &shaType)
+					signature, err := pkcsUtils.SignData(private.(*rsa.PrivateKey), hashData, &shaType);
+					if (err == nil) {
+						cipherData.PrivateKey = private
+						cipherData.Certificate = certificate
+						cipherData.Signature = signature
+						hashDataText := base64.URLEncoding.EncodeToString(hashData)
+						cipherData.HashData = &hashDataText
+						return &cipherData, nil
+					}
+				}
 			}
 		}
 	}
