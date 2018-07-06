@@ -32,24 +32,24 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 	password := context.PostForm("password")
 
 	if (xmlDataString == "") {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, nil)
 		context.JSON(http.StatusOK, result)
 		return
 	}
 
 	if (password == "") {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, nil)
 		context.JSON(http.StatusOK, result)
 		return
 	}
 
 	defer sourceFile.Close()
 	if err != nil {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, err)
 	} else {
 		buf := bytes.NewBuffer(nil)
 		if _, err := io.Copy(buf, sourceFile); err != nil {
-			result.SetStatus(bean.UnexpectedError)
+			result.SetStatus(bean.UnexpectedError, err)
 		}
 		cipherData, err := signatureService.SignDataWithCertificate(&xmlDataString, buf.Bytes(), password);
 		if (err == nil) {
@@ -57,12 +57,12 @@ func (self SignatureApi) SignWithCertificate(context *gin.Context) {
 			if (err == nil) {
 				digitallySignedData := response.DigitallySignedData{}.Init(signedData)
 				result.Data = digitallySignedData
-				result.SetStatus(bean.Success)
+				result.SetStatus(bean.Success, nil)
 			} else {
-				result.SetStatus(bean.UnexpectedError)
+				result.SetStatus(bean.UnexpectedError, err)
 			}
 		} else {
-			result.SetStatus(bean.UnexpectedError)
+			result.SetStatus(bean.UnexpectedError, err)
 		}
 	}
 	context.JSON(http.StatusOK, result)
@@ -76,35 +76,35 @@ func (self SignatureApi) ValidateSignature(context *gin.Context) {
 	password := context.PostForm("password")
 
 	if (xmlDataString == "") {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, nil)
 		context.JSON(http.StatusOK, result)
 		return
 	}
 
 	if (password == "") {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, nil)
 		context.JSON(http.StatusOK, result)
 		return
 	}
 
 	defer sourceFile.Close()
 	if err != nil {
-		result.SetStatus(bean.UnexpectedError)
+		result.SetStatus(bean.UnexpectedError, err)
 	} else {
 		buf := bytes.NewBuffer(nil)
 		if _, err := io.Copy(buf, sourceFile); err != nil {
-			result.SetStatus(bean.UnexpectedError)
+			result.SetStatus(bean.UnexpectedError, err)
 		}
 		originData, signatureInfo, err := signatureService.RemoveSignatureFromXmlData(&xmlDataString);
 		if (err == nil) {
- 			err := signatureService.ValidateSignature(signatureInfo, &originData, buf.Bytes(), password)
+			err := signatureService.ValidateSignature(signatureInfo, &originData, buf.Bytes(), password)
 			if (err == nil) {
-				result.SetStatus(bean.Success)
+				result.SetStatus(bean.Success, nil)
 			} else {
-				result.SetStatus(bean.UnexpectedError)
+				result.SetStatus(bean.UnexpectedError, err)
 			}
 		} else {
-			result.SetStatus(bean.UnexpectedError)
+			result.SetStatus(bean.UnexpectedError, err)
 		}
 	}
 	context.JSON(http.StatusOK, result)

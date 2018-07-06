@@ -47,12 +47,21 @@ func (self SignatureService) SignDataWithCertificate(data *string, certificateDa
 						hashDataText := base64.URLEncoding.EncodeToString(hashData)
 						cipherData.HashData = &hashDataText
 						return &cipherData, nil
+					} else {
+						return nil, err
 					}
+				} else {
+					return nil, err
 				}
+			} else {
+				return nil, err
 			}
+		} else {
+			return nil, err
 		}
+	} else {
+		return nil, err
 	}
-	return nil, err;
 }
 
 func (self SignatureService) ValidateSignature(signature map[string]interface{}, data *string, certificateData []byte, password string) (error) {
@@ -64,9 +73,12 @@ func (self SignatureService) ValidateSignature(signature map[string]interface{},
 			hashData := shaUtils.Hash(data, &shaType)
 			err := pkcsUtils.ValidateSignedData(&private.(*rsa.PrivateKey).PublicKey, signature["SignatureValue"].(string), hashData, &shaType)
 			return err
+		} else {
+			return nil
 		}
+	} else {
+		return nil
 	}
-	return nil
 }
 
 func (self SignatureService) RemoveSignatureFromXmlData(xmlDataString *string) (string, map[string]interface{}, error) {
@@ -80,9 +92,13 @@ func (self SignatureService) RemoveSignatureFromXmlData(xmlDataString *string) (
 		temp := strings.Split(*xmlDataString, "<Invoice>")[0]
 		if (err == nil) {
 			return temp + *minifiedXml, signatureInfo, err
+		} else {
+			return "", signatureInfo, err
 		}
+	} else
+	{
+		return "", signatureInfo, err
 	}
-	return "", signatureInfo, err
 }
 
 func (self SignatureService) InsertSignatureToXmlData(xmlDataString *string, cipherData *bean.CipherData) (string, error) {
